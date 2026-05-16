@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+
+                <li>
+                    <button id="theme-toggle">
+                        🌙 Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+
+            <h1>About Me</h1>
+
+            <p>
+                I am a Software Engineering student with a strong academic record and a genuine interest in frontend development.
+                I enjoy building clean, component based interfaces using React, HTML, CSS, and JavaScript.
+            </p>
+
+        </section>
+
+        <section id="education">
+
+            <h1>Education</h1>
+
+            <div class="education-item">
+
+                <h3>Bachelor of Software Engineering (2023-2027)</h3>
+                <p>University of Gujrat, Pakistan</p>
+                <p><strong>CGPA:</strong> 3.76/4.0</p>
+
+                <h3>Intermediate in FSC (Pre Engineering)</h3>
+                <p>Superior Group of Colleges</p>
+                <p><strong>Marks:</strong> 960/1100</p>
+
+                <h3>Matriculation in Science</h3>
+                <p>Govt. Girls High School</p>
+                <p><strong>Marks:</strong> 1100/1100</p>
+
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+            <h1>Skills</h1>
+
+            <ul class="skills-list">
+
+                <li>C++</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ASP.NET Core</li>
+                <li>SQL Server</li>
+                <li>Git/GitHub</li>
+
+            </ul>
+
+        </section>
+
+        <section id="projects">
+
+            <h1>Projects</h1>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="web">
+                    Web Apps
+                </button>
+
+                <button class="filter-btn" data-filter="design">
+                    Design/Docs
+                </button>
+
+            </div>
+
+            <ul id="projects-list">
+
+                <li class="project-item" data-category="web">
+                    Gym Management System
+                </li>
+
+                <li class="project-item" data-category="web">
+                    Bakery App using Manus
+                </li>
+
+                <li class="project-item" data-category="web">
+                    Spa App using Cursor
+                </li>
+
+                <li class="project-item" data-category="design">
+                    Software Requirement Specification (SRS)
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <button id="scrollTopBtn">
+        ⬆️
+    </button>
+
+    <footer>
+
+        <a href="mailto:alishbanazem@gmail.com">
+            Contact Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/alishba-nazem-a37971300/" target="_blank">
+            LinkedIn
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
