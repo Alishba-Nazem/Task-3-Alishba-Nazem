@@ -1,0 +1,168 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f4f6;
+    color: #333;
+}
+
+header{
+    background-color: pink;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #ffe4e1;
+}
+
+main{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.education-item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li{
+    background-color: pink;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.filter-buttons{
+    margin-bottom: 20px;
+}
+
+.filter-btn{
+    padding: 10px 15px;
+    border: 1px solid pink;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background-color: pink;
+    color: white;
+}
+
+#projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.project-item{
+    flex: 1 1 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 5px solid pink;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    background-color: pink;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+}
+
+body.dark-theme{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-theme .education-item,
+body.dark-theme .project-item{
+    background-color: #2d2d2d;
+    color: white;
+}
+
+body.dark-theme .filter-btn{
+    background-color: #333;
+    color: white;
+}
+
+#theme-toggle{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#scrollTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media(min-width: 768px){
+
+    nav ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
